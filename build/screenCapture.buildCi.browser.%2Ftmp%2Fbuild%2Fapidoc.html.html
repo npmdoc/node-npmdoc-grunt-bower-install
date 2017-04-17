@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="http://stephenplusplus.github.io/grunt-bower-install"
-
-    >grunt-bower-install (v1.6.0)</a>
+    <a href="http://stephenplusplus.github.io/grunt-bower-install">grunt-bower-install (v1.6.0)</a>
 </h1>
 <h4>Inject your Bower dependencies right into your HTML from Grunt.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.grunt-bower-install">module grunt-bower-install</a><ol>
 
@@ -103,10 +96,10 @@
     var bowerJSON;
     var config = bowerConfig.read(cwd);
 
-    [&#x27;bower.json&#x27;, &#x27;component.json&#x27;].map(function (configFile) {
+    ['bower.json', 'component.json'].map(function (configFile) {
       return path.join(config.cwd, configFile);
     }).forEach(function (configFile) {
-      if (!bowerJSON &#x26;&#x26; fs.lstatSync(configFile).isFile()) {
+      if (!bowerJSON &amp;&amp; fs.lstatSync(configFile).isFile()) {
         bowerJSON = JSON.parse(fs.readFileSync(configFile));
       }
     });
@@ -121,35 +114,35 @@
 
     if (!directory || !fs.lstatSync(directory).isDirectory()) {
       console.log(
-        &#x27;Cannot find where you keep your Bower packages.&#x27; +
-        &#x27;\n&#x27; +
-        &#x27;\nWe tried looking for a `.bowerrc` file, but couldn\&#x27;t find a custom&#x27; +
-        &#x27;\n`directory` property defined. We then tried `bower_components`, but&#x27; +
-        &#x27;\nit looks like that doesn\&#x27;t exist either. As a last resort, we tried&#x27; +
-        &#x27;\nthe pre-1.0 `components` directory, but that also couldn\&#x27;t be found.&#x27; +
-        &#x27;\n&#x27; +
-        &#x27;\nUnfortunately, we can\&#x27;t proceed without knowing where the Bower&#x27; +
-        &#x27;\npackages you have installed are.&#x27; +
-        &#x27;\n&#x27;
+        'Cannot find where you keep your Bower packages.' +
+        '\n' +
+        '\nWe tried looking for a `.bowerrc` file, but couldn\'t find a custom' +
+        '\n`directory` property defined. We then tried `bower_components`, but' +
+        '\nit looks like that doesn\'t exist either. As a last resort, we tried' +
+        '\nthe pre-1.0 `components` directory, but that also couldn\'t be found.' +
+        '\n' +
+        '\nUnfortunately, we can\'t proceed without knowing where the Bower' +
+        '\npackages you have installed are.' +
+        '\n'
       );
 
-      grunt.fail.fatal(&#x27;No Bower components found.&#x27;);
+      grunt.fail.fatal('No Bower components found.');
     }
 
     return directory;
   }
 
-  grunt.registerMultiTask(&#x27;bowerInstall&#x27;, &#x27;Inject all components in your HTML file.&#x27;, function () {
-    this.requiresConfig([&#x27;bowerInstall&#x27;, this.target, &#x27;src&#x27;]);
+  grunt.registerMultiTask('bowerInstall', 'Inject all components in your HTML file.', function () {
+    this.requiresConfig(['bowerInstall', this.target, 'src']);
 
-    var cwd = this.data.cwd || &#x27;.&#x27;;
+    var cwd = this.data.cwd || '.';
     var options = this.data;
 
     options.bowerJson = _findBowerJSON(cwd);
     options.directory = _findBowerDirectory(cwd);
     options.src = grunt.file.expand(options.src);
 
-    require(&#x27;wiredep&#x27;)(options);
+    require('wiredep')(options);
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -174,10 +167,10 @@
     var bowerJSON;
     var config = bowerConfig.read(cwd);
 
-    [&#x27;bower.json&#x27;, &#x27;component.json&#x27;].map(function (configFile) {
+    ['bower.json', 'component.json'].map(function (configFile) {
       return path.join(config.cwd, configFile);
     }).forEach(function (configFile) {
-      if (!bowerJSON &#x26;&#x26; fs.lstatSync(configFile).isFile()) {
+      if (!bowerJSON &amp;&amp; fs.lstatSync(configFile).isFile()) {
         bowerJSON = JSON.parse(fs.readFileSync(configFile));
       }
     });
@@ -192,35 +185,35 @@
 
     if (!directory || !fs.lstatSync(directory).isDirectory()) {
       console.log(
-        &#x27;Cannot find where you keep your Bower packages.&#x27; +
-        &#x27;\n&#x27; +
-        &#x27;\nWe tried looking for a `.bowerrc` file, but couldn\&#x27;t find a custom&#x27; +
-        &#x27;\n`directory` property defined. We then tried `bower_components`, but&#x27; +
-        &#x27;\nit looks like that doesn\&#x27;t exist either. As a last resort, we tried&#x27; +
-        &#x27;\nthe pre-1.0 `components` directory, but that also couldn\&#x27;t be found.&#x27; +
-        &#x27;\n&#x27; +
-        &#x27;\nUnfortunately, we can\&#x27;t proceed without knowing where the Bower&#x27; +
-        &#x27;\npackages you have installed are.&#x27; +
-        &#x27;\n&#x27;
+        'Cannot find where you keep your Bower packages.' +
+        '\n' +
+        '\nWe tried looking for a `.bowerrc` file, but couldn\'t find a custom' +
+        '\n`directory` property defined. We then tried `bower_components`, but' +
+        '\nit looks like that doesn\'t exist either. As a last resort, we tried' +
+        '\nthe pre-1.0 `components` directory, but that also couldn\'t be found.' +
+        '\n' +
+        '\nUnfortunately, we can\'t proceed without knowing where the Bower' +
+        '\npackages you have installed are.' +
+        '\n'
       );
 
-      grunt.fail.fatal(&#x27;No Bower components found.&#x27;);
+      grunt.fail.fatal('No Bower components found.');
     }
 
     return directory;
   }
 
-  grunt.registerMultiTask(&#x27;bowerInstall&#x27;, &#x27;Inject all components in your HTML file.&#x27;, function () {
-    this.requiresConfig([&#x27;bowerInstall&#x27;, this.target, &#x27;src&#x27;]);
+  grunt.registerMultiTask('bowerInstall', 'Inject all components in your HTML file.', function () {
+    this.requiresConfig(['bowerInstall', this.target, 'src']);
 
-    var cwd = this.data.cwd || &#x27;.&#x27;;
+    var cwd = this.data.cwd || '.';
     var options = this.data;
 
     options.bowerJson = _findBowerJSON(cwd);
     options.directory = _findBowerDirectory(cwd);
     options.src = grunt.file.expand(options.src);
 
-    require(&#x27;wiredep&#x27;)(options);
+    require('wiredep')(options);
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -235,3 +228,4 @@
     ]
 </div>
 </div>
+</body></html>
