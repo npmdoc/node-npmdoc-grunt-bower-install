@@ -1,9 +1,11 @@
 # api documentation for  [grunt-bower-install (v1.6.0)](http://stephenplusplus.github.io/grunt-bower-install)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-bower-install.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-bower-install) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-bower-install.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-bower-install)
 #### Inject your Bower dependencies right into your HTML from Grunt.
 
-[![NPM](https://nodei.co/npm/grunt-bower-install.png?downloads=true)](https://www.npmjs.com/package/grunt-bower-install)
+[![NPM](https://nodei.co/npm/grunt-bower-install.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-bower-install)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-bower-install/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-grunt-bower-install_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-bower-install/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-grunt-bower-install/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-grunt-bower-install/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-grunt-bower-install/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-grunt-bower-install/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-grunt-bower-install/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +20,6 @@
 {
     "author": {
         "name": "Stephen Sawchuk",
-        "email": "sawchuk@gmail.com",
         "url": "http://github.com/stephenplusplus"
     },
     "bugs": {
@@ -61,8 +62,7 @@
     "main": "Gruntfile.js",
     "maintainers": [
         {
-            "name": "stephenplusplus",
-            "email": "sawchuk@gmail.com"
+            "name": "stephenplusplus"
         }
     ],
     "name": "grunt-bower-install",
@@ -70,7 +70,6 @@
     "peerDependencies": {
         "grunt": "~0.4.0"
     },
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/stephenplusplus/grunt-bower-install.git"
@@ -78,16 +77,6 @@
     "version": "1.6.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module grunt-bower-install](#apidoc.module.grunt-bower-install)
-
-
-
-# <a name="apidoc.module.grunt-bower-install"></a>[module grunt-bower-install](#apidoc.module.grunt-bower-install)
 
 
 
