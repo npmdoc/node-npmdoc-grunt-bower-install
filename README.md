@@ -1,4 +1,7 @@
-# api documentation for  [grunt-bower-install (v1.6.0)](http://stephenplusplus.github.io/grunt-bower-install)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-bower-install.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-bower-install) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-bower-install.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-bower-install)
+# npmdoc-grunt-bower-install
+
+#### basic api documentation for  [grunt-bower-install (v1.6.0)](http://stephenplusplus.github.io/grunt-bower-install)  [![npm package](https://img.shields.io/npm/v/npmdoc-grunt-bower-install.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-grunt-bower-install) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-grunt-bower-install.svg)](https://travis-ci.org/npmdoc/node-npmdoc-grunt-bower-install)
+
 #### Inject your Bower dependencies right into your HTML from Grunt.
 
 [![NPM](https://nodei.co/npm/grunt-bower-install.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-bower-install)
@@ -74,7 +77,8 @@
         "type": "git",
         "url": "git://github.com/stephenplusplus/grunt-bower-install.git"
     },
-    "version": "1.6.0"
+    "version": "1.6.0",
+    "bin": {}
 }
 ```
 
